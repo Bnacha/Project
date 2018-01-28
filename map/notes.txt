@@ -1,0 +1,8 @@
+1. export OSM : https://www.openstreetmap.org/  -> map.osm files
+
+2. type command 'netconvert --osm-files map.osm -o map.net.xml --lefthand true'
+
+3. type command 'polyconvert --osm-files map.osm --net-file map.net.xml --type-file osmPolyconvert.typ.xml -o map.poly.xml'
+
+4. type command 'python $SUMO_HOME/tools/randomTrips.py -n map.net.xml -r map.rou.xml -e 500'
+
